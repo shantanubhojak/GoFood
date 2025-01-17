@@ -18,7 +18,7 @@ export default function MyOrders() { // Name your component
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ email: userEmail })
+                body: JSON.stringify({ email: userEmail }),
             });
             const data = await response.json();
             setOrderData(data); // Ensure data is in the expected format
